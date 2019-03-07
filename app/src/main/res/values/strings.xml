@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">QrCodeGeneratorReader</string>
+    <string name="app_name">Lipa</string>
     <string name="generate_qr_code">Generate Qr Code</string>
     <string name="scan_qr_code">Scan Qr Code</string>
     <string name="barcode_reader">QrCode Reader</string>
