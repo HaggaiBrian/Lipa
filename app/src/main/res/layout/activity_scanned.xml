@@ -30,7 +30,7 @@
         <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/first_name"
+                android:text="@string/Item_Name"
                 android:textColor="@color/colorDivider"
                 android:textSize="15sp"
                 android:textStyle="bold" />
@@ -57,7 +57,7 @@
         <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/age"
+                android:text="@string/Item_Price"
                 android:textColor="@color/colorDivider"
                 android:textSize="15sp"
                 android:textStyle="bold" />
