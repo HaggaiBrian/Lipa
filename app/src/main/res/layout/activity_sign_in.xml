@@ -4,18 +4,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/colorPrimary"
-                tools:context=".AccountActivity.Register">
+                tools:context=".AccountActivity.SignIn">
 
-    <android.support.design.widget.TextInputLayout
-            android:id="@+id/SignINTextViewLayout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="10dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="15dp"
-            android:theme="@style/TextLabel">
 
-        <android.support.v7.widget.AppCompatTextView
+    <android.support.v7.widget.AppCompatTextView
                 android:id="@+id/LoginTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -23,14 +15,12 @@
                 android:hint="@string/SignIn_Now"
                 android:paddingEnd="8dp"
                 android:paddingStart="8dp"
+                android:text="@string/SignIn_Now"
                 android:textColor="@color/whiteColor"
-                android:textSize="15sp" />
-
-    </android.support.design.widget.TextInputLayout>
-
+                android:textSize="30sp" />
 
     <android.support.design.widget.TextInputLayout
-            android:id="@+id/EmailLayout"
+            android:id="@+id/EmailLayoutsignIn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/SignINTextViewLayout"
@@ -40,7 +30,7 @@
             android:theme="@style/TextLabel">
 
         <android.support.v7.widget.AppCompatEditText
-                android:id="@+id/Email"
+                android:id="@+id/EmailsignIn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawablePadding="10dp"
@@ -54,17 +44,17 @@
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
-            android:id="@+id/PasswordLayout"
+            android:id="@+id/PasswordLayoutsignIN"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/EmailLayout"
+            android:layout_below="@+id/EmailLayoutsignIn"
             android:layout_marginEnd="10dp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="25dp"
             android:theme="@style/TextLabel">
 
         <android.support.v7.widget.AppCompatEditText
-                android:id="@+id/Password"
+                android:id="@+id/PasswordsignIn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawablePadding="10dp"
@@ -88,7 +78,7 @@
             style="?android:buttonBarButtonStyle"
             android:textColor="@color/whiteColor"
             android:textStyle="bold"
-            android:layout_below="@+id/PasswordLayout"/>
+            android:layout_below="@+id/PasswordLayoutsignIN"/>
 
     <Button
             android:id="@+id/btn_reset_password"

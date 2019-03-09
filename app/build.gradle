@@ -5,7 +5,7 @@ apply plugin: 'kotlin-android-extensions'
 android {
     compileSdkVersion 27
     defaultConfig {
-        applicationId "com.spartons.qrcodegeneratorreader"
+        applicationId "com.lipa"
         minSdkVersion 19
         targetSdkVersion 27
         versionCode 1

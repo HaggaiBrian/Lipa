@@ -13,22 +13,28 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".AccountActivity.ResetPassword">
-        </activity>
-        <activity android:name=".AccountActivity.SignIn">
-        </activity>
-        <activity android:name=".AccountActivity.Register">
-        </activity>
         <activity
-                android:name=".FirstActivity"
-                android:label="@string/title_activity_first"
-                android:screenOrientation="portrait"
-                android:theme="@style/AppTheme.NoActionBar">
+                android:name=".AccountActivity.SignIn">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+        </activity>
+        <activity
+                android:name=".AccountActivity.ResetPassword"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".AccountActivity.Register"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".FirstActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity
                 android:name=".QRScanningActivity.GenerateQrCodeActivity"

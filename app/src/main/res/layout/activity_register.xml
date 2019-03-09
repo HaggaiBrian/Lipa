@@ -6,16 +6,7 @@
                 android:background="@color/colorPrimary"
                 tools:context=".AccountActivity.Register">
 
-    <android.support.design.widget.TextInputLayout
-            android:id="@+id/RegisterTextViewLayout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="10dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="15dp"
-            android:theme="@style/TextLabel">
-
-        <android.support.v7.widget.AppCompatTextView
+    <android.support.v7.widget.AppCompatTextView
                 android:id="@+id/RegisterTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -23,20 +14,18 @@
                 android:hint="@string/Register_Now"
                 android:paddingEnd="8dp"
                 android:paddingStart="8dp"
+                android:text="@string/Register_Now"
                 android:textColor="@color/whiteColor"
-                android:textSize="15sp" />
-
-    </android.support.design.widget.TextInputLayout>
-
+                android:textSize="20sp" />
 
     <android.support.design.widget.TextInputLayout
             android:id="@+id/fullNameLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/RegisterTextViewLayout"
+            android:layout_below="@+id/RegisterTextView"
             android:layout_marginEnd="10dp"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="35dp"
             android:theme="@style/TextLabel">
 
         <android.support.v7.widget.AppCompatEditText
@@ -142,29 +131,6 @@
                 android:drawablePadding="10dp"
                 android:hint="@string/Phone_Number"
                 android:inputType="phone"
-                android:paddingEnd="8dp"
-                android:paddingStart="8dp"
-                android:textColor="@color/whiteColor"
-                android:textSize="15sp" />
-
-    </android.support.design.widget.TextInputLayout>
-
-    <android.support.design.widget.TextInputLayout
-            android:id="@+id/TermsandConditionsLayout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/PhoneNumberLayout"
-            android:layout_marginEnd="10dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="25dp"
-            android:theme="@style/TextLabel">
-
-        <android.support.v7.widget.AppCompatTextView
-                android:id="@+id/TermsandConditionsTextView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:drawablePadding="10dp"
-                android:hint="@string/Terms_and_Conditions"
                 android:paddingEnd="8dp"
                 android:paddingStart="8dp"
                 android:textColor="@color/whiteColor"
