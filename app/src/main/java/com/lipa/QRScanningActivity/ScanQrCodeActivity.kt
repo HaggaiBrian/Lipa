@@ -1,4 +1,4 @@
-package com.lipa
+package com.lipa.QRScanningActivity
 
 import android.Manifest
 import android.content.Context
@@ -17,6 +17,7 @@ import android.widget.TextView
 import android.widget.Toast
 import com.google.zxing.BarcodeFormat
 import com.google.zxing.Result
+import com.lipa.R
 import kotlinx.android.synthetic.main.activity_scan_qr_code.*
 import me.dm7.barcodescanner.zxing.ZXingScannerView
 
@@ -39,10 +40,14 @@ class ScanQrCodeActivity : AppCompatActivity(), ZXingScannerView.ResultHandler {
         flashOnOffImageView.setOnClickListener {
             if (qrCodeScanner.flash) {
                 qrCodeScanner.flash = false
-                flashOnOffImageView.background = ContextCompat.getDrawable(this, R.drawable.flash_off_vector_icon)
+                flashOnOffImageView.background = ContextCompat.getDrawable(this,
+                    R.drawable.flash_off_vector_icon
+                )
             } else {
                 qrCodeScanner.flash = true
-                flashOnOffImageView.background = ContextCompat.getDrawable(this, R.drawable.flash_on_vector_icon)
+                flashOnOffImageView.background = ContextCompat.getDrawable(this,
+                    R.drawable.flash_on_vector_icon
+                )
             }
         }
     }
@@ -69,7 +74,8 @@ class ScanQrCodeActivity : AppCompatActivity(), ZXingScannerView.ResultHandler {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             if (checkSelfPermission(Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
                 ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.CAMERA),
-                    MY_CAMERA_REQUEST_CODE)
+                    MY_CAMERA_REQUEST_CODE
+                )
                 return
             }
         }

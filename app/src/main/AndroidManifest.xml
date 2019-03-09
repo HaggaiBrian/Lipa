@@ -13,11 +13,11 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".ResetPassword">
+        <activity android:name=".AccountActivity.ResetPassword">
         </activity>
-        <activity android:name=".SignIn">
+        <activity android:name=".AccountActivity.SignIn">
         </activity>
-        <activity android:name=".Register">
+        <activity android:name=".AccountActivity.Register">
         </activity>
         <activity
                 android:name=".FirstActivity"
@@ -31,14 +31,14 @@
             </intent-filter>
         </activity>
         <activity
-                android:name=".GenerateQrCodeActivity"
+                android:name=".QRScanningActivity.GenerateQrCodeActivity"
                 android:screenOrientation="portrait"
                 android:windowSoftInputMode="stateHidden"/>
         <activity
-                android:name=".ScanQrCodeActivity"
+                android:name=".QRScanningActivity.ScanQrCodeActivity"
                 android:screenOrientation="portrait"/>
         <activity
-                android:name=".ScannedActivity"
+                android:name=".QRScanningActivity.ScannedActivity"
                 android:screenOrientation="portrait"/>
     </application>
 

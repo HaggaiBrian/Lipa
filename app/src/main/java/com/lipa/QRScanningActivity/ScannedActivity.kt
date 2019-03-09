@@ -1,10 +1,11 @@
-package com.lipa
+package com.lipa.QRScanningActivity
 
 import android.content.Context
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import com.google.gson.Gson
+import com.lipa.R
 import com.lipa.helper.EncryptionHelper
 import com.lipa.models.UserObject
 import kotlinx.android.synthetic.main.activity_scanned.*

@@ -1,13 +1,14 @@
 package com.lipa
 
 import android.os.Bundle
-import android.support.design.widget.Snackbar
 import android.support.design.widget.NavigationView
 import android.support.v4.view.GravityCompat
 import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
+import com.lipa.QRScanningActivity.GenerateQrCodeActivity
+import com.lipa.QRScanningActivity.ScanQrCodeActivity
 import kotlinx.android.synthetic.main.activity_first.*
 import kotlinx.android.synthetic.main.app_bar_first.*
 import kotlinx.android.synthetic.main.content_first.*

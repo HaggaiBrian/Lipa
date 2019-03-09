@@ -1,7 +1,8 @@
-package com.lipa
+package com.lipa.AccountActivity
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.lipa.R
 
 class Register : AppCompatActivity() {
 
