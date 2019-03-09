@@ -27,7 +27,7 @@ class GenerateQrCodeActivity : AppCompatActivity() {
         generateQrCodeButton.setOnClickListener {
             if (checkEditText()) {
                 hideKeyboard()
-                val user = UserObject(ItemName = fullNameEditText.text.toString(), ItemPrice = Integer.parseInt(ageEditText.text.toString()))
+                val user = UserObject(ItemName = ItemNameEditText.text.toString(), ItemPrice = Integer.parseInt(ItemPriceEditText.text.toString()))
                 val serializeString = Gson().toJson(user)
                 val encryptedString = EncryptionHelper.getInstance().encryptionString(serializeString).encryptMsg()
                 setImageBitmap(encryptedString)
@@ -53,10 +53,10 @@ class GenerateQrCodeActivity : AppCompatActivity() {
     }
 
     private fun checkEditText(): Boolean {
-        if (TextUtils.isEmpty(fullNameEditText.text.toString())) {
+        if (TextUtils.isEmpty(ItemNameEditText.text.toString())) {
             Toast.makeText(this, "Item Name field cannot be empty!", Toast.LENGTH_SHORT).show()
             return false
-        } else if (TextUtils.isEmpty(ageEditText.text.toString())) {
+        } else if (TextUtils.isEmpty(ItemPriceEditText.text.toString())) {
             Toast.makeText(this, "Item Price field cannot be empty!", Toast.LENGTH_SHORT).show()
             return false
         }

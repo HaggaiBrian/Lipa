@@ -36,7 +36,7 @@
                 android:textStyle="bold" />
 
         <TextView
-                android:id="@+id/scannedFullNameTextView"
+                android:id="@+id/scannedItemName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
@@ -63,7 +63,7 @@
                 android:textStyle="bold" />
 
         <TextView
-                android:id="@+id/scannedAgeTextView"
+                android:id="@+id/scannedItemPrice"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"

@@ -27,7 +27,7 @@ class ScannedActivity : AppCompatActivity() {
             throw RuntimeException("No encrypted String found in intent")
         val decryptedString = EncryptionHelper.getInstance().getDecryptionString(intent.getStringExtra(SCANNED_STRING))
         val userObject = Gson().fromJson(decryptedString, UserObject::class.java)
-        scannedFullNameTextView.text = userObject.ItemName
-        scannedAgeTextView.text = userObject.ItemPrice.toString()
+        scannedItemName.text = userObject.ItemName
+        scannedItemPrice.text = userObject.ItemPrice.toString()
     }
 }

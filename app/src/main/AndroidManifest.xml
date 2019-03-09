@@ -2,9 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.lipa">
 
-    <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.hardware.camera" />
-    <uses-permission android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.hardware.camera"/>
+    <uses-permission android:name="android.hardware.camera.autofocus"/>
 
     <application
             android:allowBackup="true"
@@ -13,25 +13,33 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <activity android:name=".ResetPassword">
+        </activity>
+        <activity android:name=".SignIn">
+        </activity>
+        <activity android:name=".Register">
+        </activity>
         <activity
                 android:name=".FirstActivity"
-                android:screenOrientation="portrait">
+                android:label="@string/title_activity_first"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
         <activity
                 android:name=".GenerateQrCodeActivity"
                 android:screenOrientation="portrait"
-                android:windowSoftInputMode="stateHidden" />
+                android:windowSoftInputMode="stateHidden"/>
         <activity
                 android:name=".ScanQrCodeActivity"
-                android:screenOrientation="portrait" />
+                android:screenOrientation="portrait"/>
         <activity
                 android:name=".ScannedActivity"
-                android:screenOrientation="portrait" />
+                android:screenOrientation="portrait"/>
     </application>
 
 </manifest>
