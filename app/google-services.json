@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "337319865148",
+    "firebase_url": "https://lipa-c5869.firebaseio.com",
+    "project_id": "lipa-c5869",
+    "storage_bucket": "lipa-c5869.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:337319865148:android:e68fe372b2f86311",
+        "android_client_info": {
+          "package_name": "com.lipa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "337319865148-bvbnusdgunphunnu45mcu7o306o4ldsk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxNzxfWrRHlA03mOrBW_MlnH72X51Kp50"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
