@@ -14,7 +14,7 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
         <activity
-                android:name=".AccountActivity.SignIn">
+                android:name=".accountactivity.SignIn">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -22,12 +22,12 @@
             </intent-filter>
         </activity>
         <activity
-                android:name=".AccountActivity.ResetPassword"
+                android:name=".accountactivity.ResetPassword"
                 android:screenOrientation="portrait"
                 android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity
-                android:name=".AccountActivity.Register"
+                android:name=".accountactivity.Register"
                 android:screenOrientation="portrait"
                 android:theme="@style/AppTheme.NoActionBar">
         </activity>
@@ -37,14 +37,14 @@
                 android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity
-                android:name=".QRScanningActivity.GenerateQrCodeActivity"
+                android:name=".qrscanningactivity.GenerateQrCodeActivity"
                 android:screenOrientation="portrait"
                 android:windowSoftInputMode="stateHidden"/>
         <activity
-                android:name=".QRScanningActivity.ScanQrCodeActivity"
+                android:name=".qrscanningactivity.ScanQrCodeActivity"
                 android:screenOrientation="portrait"/>
         <activity
-                android:name=".QRScanningActivity.ScannedActivity"
+                android:name=".qrscanningactivity.ScannedActivity"
                 android:screenOrientation="portrait"/>
     </application>
 

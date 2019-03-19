@@ -4,9 +4,19 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/colorPrimary"
-                tools:context=".AccountActivity.SignIn">
+                tools:context=".accountactivity.SignIn">
 
 
+    <Button
+            android:id="@+id/btn_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@null"
+            android:text="@string/Sign_Up"
+            android:layout_below="@id/btn_login"
+            android:textAllCaps="false"
+            android:textColor="@color/colorAccent"/>
     <android.support.v7.widget.AppCompatTextView
                 android:id="@+id/LoginTextView"
                 android:layout_width="match_parent"
@@ -108,7 +118,7 @@
             android:layout_marginBottom="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="5dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="108dp"
             android:layout_below="@+id/btn_reset_password">
     </com.google.android.gms.common.SignInButton>
 

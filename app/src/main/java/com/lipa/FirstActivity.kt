@@ -7,8 +7,8 @@ import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
-import com.lipa.QRScanningActivity.GenerateQrCodeActivity
-import com.lipa.QRScanningActivity.ScanQrCodeActivity
+import com.lipa.qrscanningactivity.GenerateQrCodeActivity
+import com.lipa.qrscanningactivity.ScanQrCodeActivity
 import kotlinx.android.synthetic.main.activity_first.*
 import kotlinx.android.synthetic.main.app_bar_first.*
 import kotlinx.android.synthetic.main.content_first.*

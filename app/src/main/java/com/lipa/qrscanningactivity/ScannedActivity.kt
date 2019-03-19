@@ -1,4 +1,4 @@
-package com.lipa.QRScanningActivity
+package com.lipa.qrscanningactivity
 
 import android.content.Context
 import android.content.Intent

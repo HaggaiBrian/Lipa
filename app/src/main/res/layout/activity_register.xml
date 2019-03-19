@@ -4,7 +4,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/colorPrimary"
-                tools:context=".AccountActivity.Register">
+                tools:context=".accountactivity.Register">
 
     <android.support.v7.widget.AppCompatTextView
                 android:id="@+id/RegisterTextView"
@@ -139,7 +139,18 @@
     </android.support.design.widget.TextInputLayout>
 
     <Button
-            android:id="@+id/SignUp"
+            android:id="@+id/btn_signin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="93dp"
+            android:background="@null"
+            android:text="@string/Login"
+            android:layout_below="@id/PhoneNumberLayout"
+            android:textAllCaps="false"
+            android:textColor="@color/colorAccent"/>
+
+    <Button
+            android:id="@+id/btn_signup"
             style="?android:buttonBarButtonStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
